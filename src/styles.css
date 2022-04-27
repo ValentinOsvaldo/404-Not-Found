@@ -54,6 +54,7 @@ img {
   display: flex;
   gap: 1rem;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .main__container > * {
