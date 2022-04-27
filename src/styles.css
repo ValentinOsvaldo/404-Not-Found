@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Space Mono', monospace;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+/* Utilities */
+
+.btn-primary {
+  background-color: #333333;
+  color: #fff;
+  padding: 1rem;
+  width: fit-content;
+  transition: all 0.4s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+/* End Utilities */
+
+.main__head {
+  font-family: 'Inconsolata', monospace;
+}
+
+.main__container {
+  display: flex;
+  gap: 1rem;
+  flex-flow: row wrap;
+}
+
+.main__container > * {
+  flex: 1 1 auto;
+}
+
+.img__wrapper {
+  max-width: 500px;
+}
+
+.text__wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.main__title {
+  font-size: 48px;
+  margin: 0.25rem 0;
+}
+
+.text__body {
+  font-size: 1.25rem;
+}
+
+.main__footer {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #BDBDBD;
+}
+
+@media screen and (min-width: 1024px) {
+  .main__container {
+    flex-flow: row nowrap;
+  }
+
+  .main__title {
+    font-size: 64px;
+  }
+}
